@@ -60,7 +60,7 @@
             <span id="hasil">0</span>
           </div>
           <br>
-          <button type="button" class="btn btn-info">Hitung</button>
+          <button type="button" class="btn btn-info" id="btn-hasil">Hitung</button>
         </div>
       </div>
       <!---<<< Pertambahan >>>--->
@@ -75,6 +75,32 @@
     
       <!---<<<  Pembagian  >>>--->
       <!---<<<  Code Here  >>>--->
+        <!---<<< Pertambahan >>>--->
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Pembagian</h3>
+            <br>
+            <div>
+              <input type="number" id="inputbagi1" style="width: 20%; display: inline-block;"> /
+              <input type="number" id="inputbagi2" style="width: 20%; display: inline-block;"> = 
+              <span id="hasilbagi">0</span>
+            </div>
+            <br>
+            <button type="button" class="btn btn-info" id="btn-hasilbagi">Hitung</button>
+          </div>
+          <script>
+            const inputbagi1 = document.getElementById('inputbagi1');
+            const inputbagi2 = document.getElementById('inputbagi2');
+            const hasilbagi = document.getElementById('hasilbagi');
+            const btnbagi = document.getElementById('btn-hasilbagi');
+
+            btnbagi.addEventListener('click', pembagian);
+            function pembagian (){
+              const result = parseInt(inputbagi1.value) / parseInt(inputbagi2.value)
+              hasilbagi.innerText = result
+            }
+          </script>
+          
       <!---<<<  Pembagian  >>>--->
     </div>  
   </section>
@@ -86,7 +112,9 @@
   <!---<<< Footer End >>>--->
 
   <!---<<< Custom JavaScript   >>>--->
-  <script src="scriptJava.js"></script>
+  <script>
+
+  </script>
 </body>
 
 </html>
