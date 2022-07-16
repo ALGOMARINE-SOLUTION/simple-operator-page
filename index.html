@@ -117,6 +117,35 @@
     
       <!---<<<  Perkalian  >>>--->
       <!---<<<  Code Here  >>>--->
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Perkalian</h3>
+          <br>
+          <div>
+            <input type="number" id="kesatu" style="width: 20%; display: inline-block;"> x
+            <input type="number" id="kedua" style="width: 20%; display: inline-block;"> = 
+            <span id="hasilkali">0</span>
+          </div>
+          <br>
+          <button type="button" class="btn btn-info" id="btn-hasilbagi">Hitung</button>
+        </div>
+        <script>
+          //1. definisikan elemen yang terlibat
+          const inputbagi1 = document.getElementById('kesatu');
+          const inputbagi2 = document.getElementById('kedua');
+          const hasilbagi = document.getElementById('hasilkali');
+          const btnbagi = document.getElementById('btn-hasilbagi');
+
+          //2. masukkan deteksi input berupa 'klik' ke dalam elemen button
+          btnbagi.addEventListener('click', kali)
+
+          //3. bikin function untuk menghitung var input1 dan var imput2, taruh di hasil
+          function kali () {
+            const result = parseInt(inputbagi1.value) * parseInt(inputbagi2.value)
+            hasilbagi.innerText = result
+          }
+        </script>
+      </div>
       <!---<<<  Perkalian  >>>--->
     
       <!---<<<  Pembagian  >>>--->
