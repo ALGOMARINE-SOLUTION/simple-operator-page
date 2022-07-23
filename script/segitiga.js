@@ -1,5 +1,3 @@
-console.log('terbaca');
-
 function hitungLuasDanKelilingSegitiga() {
     //1. mendefinisikan  tag yang akan digunakan
     const sisisInput = document.getElementById('sisis');
