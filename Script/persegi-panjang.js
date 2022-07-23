@@ -11,7 +11,5 @@ function perhitunganPersegiPanjang() {
     const kelilingPerPan = (2*panjang) + (2*lebar)
 
     luasPerPanTxt.innerText = luasPerPan
-    console.log (luasPerPanTxt)
-    console.log (kelilingPerPanTxt)
     kelilingPerPanTxt.innerText = kelilingPerPan
 }
