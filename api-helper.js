@@ -2,10 +2,6 @@ async function hitApiWithGetMethod(url = '') {
   // 'tembak' api-nya
   const response = await fetch(url, {
     method: 'GET',
-    headers: {
-      'Content-Type': 'application/json'
-      // 'Content-Type': 'application/x-www-form-urlencoded',
-    }
   })
 
   // Kembalikan respon dari API-nya sebagai JSON / TEXT
