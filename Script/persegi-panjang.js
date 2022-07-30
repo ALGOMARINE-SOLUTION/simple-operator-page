@@ -13,3 +13,22 @@ function perhitunganPersegiPanjang() {
     luasPerPanTxt.innerText = luasPerPan
     kelilingPerPanTxt.innerText = kelilingPerPan
 }
+
+function perhitunganPersegiPanjangdenganAPI() {
+    const panjangInput = document.getElementById('panjang');
+    const lebarInput = document.getElementById('lebar');
+    const luasPerPanTxt = document.getElementById('luasPerPan');
+    const kelilingPerPanTxt = document.getElementById('kelPerPan');
+
+    const response = hitApiWithPostMethod(
+    'https://simple-express-server-algo.herokuapp.com/bangun-datar/persegi-panjang',
+    { 
+        panjang: parseInt(panjangInput.value), 
+        lebar: parseInt(lebarInput.value)
+    }
+    );
+    response.then((responseApi) => {
+    luasPerPanTxt.innerText = responseApi.data.luas
+    kelilingPerPanTxt.innerText = responseApi.data.keliling
+    })
+}
