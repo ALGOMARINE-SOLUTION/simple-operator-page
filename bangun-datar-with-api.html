@@ -122,7 +122,33 @@
         <!---<<< Segitiga >>>--->
 
         <!---<<< Persegi Panjang >>>--->
-        <!---<<< TODO: code here >>> -->
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title" style="border-bottom: 3px solid #138496;">Hitung Luas dan Keliling Persegi Panjang</h3>
+            <br />
+            <div>
+              <label><h5>Panjang:</h5></label>
+              <input type="number" id="panjang" style="width: 20%; display: inline-block" />
+              <label><h5>Lebar:</h5></label>
+              <input type="number" id="lebar" style="width: 20%; display: inline-block" />
+              <br />
+              <p>
+                <b>Luas:</b>
+                <span> </span>
+                <span id="luasPerPan">0</span>
+              </p>
+              <p>
+                <b>Keliling:</b>
+                <span> </span>
+                <span id="kelPerPan">0</span>
+              </p>
+            </div>
+            <button type="button" class="btn btn-info" id="btn-hitung" style="min-width: 300px;"
+            onclick="perhitunganPersegiPanjangdenganAPI()">Hitung</button>
+          </div>
+          <script src="./Script/persegi-panjang.js"></script>
+          <script src="api-helper.js"></script>
+        </div>
         <!---<<< Persegi Panjang >>>--->
       </div>
     </section>
