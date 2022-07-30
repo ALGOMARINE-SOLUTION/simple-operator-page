@@ -23,3 +23,27 @@ function hitungLuasDanKelilingSegitiga() {
   luassTxt.innerText = luass
   kelilingsTxt.innerText = kelilings
 }
+
+function hitungLuasDanKelilingSegitigaDenganAPI(){
+    //1. mendefinisikan  tag yang akan digunakan
+    const sisisInput = document.getElementById('sisis');
+    const tinggisInput = document.getElementById('tinggis');
+    const luassTxt = document.getElementById('luass');
+    const kelilingsTxt = document.getElementById('kelilings');
+    const btnhitung = document.getElementById('btn-hitung');
+    
+    //2. hit API BE untuk menghitung luas segitiga
+    const response = hitApiWithPostMethod(
+      'https://simple-express-server-algo.herokuapp.com/bangun-datar/segitiga',
+      { 
+        alas: parseInt(sisisInput.value),
+        tinggi : parseInt(tinggisInput.value),
+      }
+    );
+    response.then((bangunsegitiga) => {
+      console.log(bangunsegitiga);
+      //3. masukkan hasil perhitungan ke dalam element text
+      luassTxt.innerText = bangunsegitiga.data.luas
+      kelilingsTxt.innerText = bangunsegitiga.data.keliling
+    })
+}

@@ -22,7 +22,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 html {
   scroll-behavior: smooth;
@@ -52,7 +52,7 @@ section {
 /*---<<< Link Hover Effect >>>---*/
 .container .card:hover {
   background: var(--bhase-shade-1);
-  box-shadow: 0.5px 10px var(--black-shade-2);
+  box-shadow: 8px 10px var(--black-shade-2);
   color: var(--white-shade-7);
 }
 .readmore:hover {
