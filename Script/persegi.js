@@ -17,3 +17,13 @@ function hitungLuasDanKeliling() {
   luasTxt.innerText = luas
   kelilingTxt.innerText = keliling
 }
+
+function hitungLuasDanKelilingDenganAPI() {
+  // 1. mendefinisikan tag apa saja yang kita akan gunakan
+  const sisiInput = document.getElementById('sisi');
+  const luasTxt = document.getElementById('luas');
+  const kelilingTxt = document.getElementById('keliling');
+
+  // 2. hit api BE utk menghitung luas persegi
+
+}

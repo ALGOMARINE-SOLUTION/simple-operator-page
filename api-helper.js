@@ -28,3 +28,5 @@ async function hitApiWithPostMethod(url = '', data = {}) {
     return await clone.text()
   }
 }
+
+module.exports = { hitApiWithGetMethod, hitApiWithPostMethod }
