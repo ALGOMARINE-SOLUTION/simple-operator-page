@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!---<<< Required Meta Tags >>>--->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!---<<< Tittle >>>--->
+    <title>Draft Daftar</title>
+
+    <!---<<< Main Awesome Fonts Google >>>--->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!---<<< Styles CSS >>>--->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styleComponent.css" />
+    <link rel="stylesheet" href="styleResponsive.css" />
+
+    <!---<<< !!Just for Icon not more!! >>>--->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      h2 {
+        font-family: cursive;
+        font-size: 30px;
+      }
+      a {
+        font-size: larger;
+        font-family: cursive;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!---<<< Scroll Top & Button Start >>>--->
+    <a class="gotopbtn" href="#"> <i class="bx bx-chevrons-up"></i> </a>
+    <!---<<< Scroll Top & Button End >>>--->
+
+    <!---<<< Script API Helper >>>---->
+    <script src="/perpustakaan/api-helper.js"></script>
+    <!---<<< Script API Helper >>>---->
+
+    <!---<<< Navbar Start >>>---->
+    <nav>
+      <div class="logo">
+        <a href="#"><img src="/perpustakaan/Img/Logo Tide Station.png" width="170px" /></a>
+      </div>
+      <label for="btn" class="icon">
+        <span class="bx bx-menu"></span>
+      </label>
+      <input type="checkbox" id="btn" />
+      <ul>
+        <li><a href="/simple-operator-page">Home</a></li>
+        <li><a href="/simple-operator-page/bangun-datar.html">Bangun Datar tanpa API</a></li>
+        <li><a href="/simple-operator-page/bangun-datar-with-api.html">Bangun Datar dengan API</a></li>
+      </ul>
+    </nav>
+    <!---<<< Navbar End >>>---->
+
+    <section class="station">
+        <div class="card-deck row mt-5 p-5">
+            <div class="card">
+              <img class="card-img-top" src="/perpustakaan/Img/bukuimg.jpg" alt="Buku A">
+              <div class="card-body">
+                <h5 class="card-title">Buku 1</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted d-flex justify-content-around">
+                    <a href="/perpustakaan/ubah-buku/index.html" class="btn btn-primary mr-2" id="table-data">Ubah</a>
+                    <a href="#" class="btn btn-secondary" id="table-data">Hapus</a>
+                </small>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="/perpustakaan/Img/bukuimg.jpg" alt="Buku B">
+              <div class="card-body">
+                <h5 class="card-title">Buku 2</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted text-muted d-flex justify-content-around">
+                    <a href="/perpustakaan/ubah-buku/index.html" class="btn btn-primary mr-2">Ubah</a>
+                    <a href="#" class="btn btn-secondary">Hapus</a>
+                </small>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="/perpustakaan/Img/bukuimg.jpg" alt="Buku C">
+              <div class="card-body">
+                <h5 class="card-title">Buku 3</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted text-muted d-flex justify-content-around">
+                    <a href="/perpustakaan/ubah-buku/index.html" class="btn btn-primary mr-2">Ubah</a>
+                    <a href="#" class="btn btn-secondary">Hapus</a>
+                </small>
+              </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="/perpustakaan/Img/bukuimg.jpg" alt="Buku D">
+                <div class="card-body">
+                  <h5 class="card-title">Buku 4</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted text-muted d-flex justify-content-around">
+                      <a href="/perpustakaan/ubah-buku/index.html" class="btn btn-primary mr-2">Ubah</a>
+                      <a href="#" class="btn btn-secondary">Hapus</a>
+                  </small>
+                </div>
+                <script src="/perpustakaan/api-helper.js"></script>
+                <script src="/perpustakaan/Script/daftarbuku.js"></script>
+              </div>
+          </div>
+          <div class="new mt-3">
+            <button type="button" class="btn btn-primary btn-lg btn-block">
+              <a style="color:white ;" href="/perpustakaan/tambah-buku/index.html">Tambah Buku</a>
+            </button>
+          </div>
+    </section>
+
+    <!---<<< Footer Start >>>--->
+    <footer>
+      <p src="#">&#169; 2022 Tide Station. ALGOMARINE</p>
+    </footer>
+    <!---<<< Footer End >>>--->
+  </body>
+</html>
