@@ -57,7 +57,7 @@ p {
 nav {
   width: 100%;
   height: 200px;
-  background: linear-gradient(50deg, var(--white-shade-5), var(--black-shade-4)), url(/perpustakaan/Img/Navbar_img.jpg);
+  background: linear-gradient(50deg, var(--white-shade-5), var(--black-shade-4)), url(/Img/Navbar_img.jpg);
   background-attachment: fixed;
   background-position: center;
 }
